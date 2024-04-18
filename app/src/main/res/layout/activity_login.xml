@@ -5,7 +5,7 @@
     android:id="@+id/imput_email"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".view.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logoapp" />
+        android:layout_marginTop="85dp"
+        app:srcCompat="@drawable/logoapp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField"
@@ -23,6 +24,8 @@
         android:hint="e-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -36,15 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
         app:layout_constraintTop_toBottomOf="@+id/outlinedTextField"
         app:endIconMode="password_toggle"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
+            android:layout_height="58dp"
+            android:inputType="textPassword" />
 
 
 
@@ -56,12 +60,40 @@
         android:layout_width="120dp"
         android:layout_height="80dp"
         android:text="Logar"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imput_senha"
-        android:textSize="25dp"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/esqueciSenha"
+        android:backgroundTint="@color/pink"/>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/esqueciSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/esqueci"
+        app:layout_constraintTop_toBottomOf="@id/imput_senha"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#0f187a">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/novo"
+        android:textColor="#0f187a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_logar"
+        android:layout_marginTop="40dp">
+
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

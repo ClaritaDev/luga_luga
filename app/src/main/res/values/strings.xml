@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LugaLuga</string>
+    <string name="esqueci"><u>Esqueci minha senha</u></string>
+    <string name="novo"><u>Criar novo usuário</u></string>
 </resources>
