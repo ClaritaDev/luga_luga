@@ -2,4 +2,9 @@
     <string name="app_name">LugaLuga</string>
     <string name="esqueci"><u>Esqueci minha senha</u></string>
     <string name="novo"><u>Criar novo usuário</u></string>
+
+    <string name="tv_produto"><b>Nome Produto</b></string>
+    <string name="tv_preco"><b>R$ 00,00</b></string>
+    <string name="tv_descricao">Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.</string>
+
 </resources>
