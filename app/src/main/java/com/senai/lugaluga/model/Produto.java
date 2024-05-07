@@ -1,6 +1,11 @@
 package com.senai.lugaluga.model;
 
-public class Produto {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class Produto implements Parcelable {
 
     private String nome;
 
@@ -11,6 +16,30 @@ public class Produto {
     private String status;
 
     private int quantidade;
+
+    protected Produto(Parcel in) {
+        nome = in.readString();
+        descricao = in.readString();
+        if (in.readByte() == 0) {
+            preco = null;
+        } else {
+            preco = in.readDouble();
+        }
+        status = in.readString();
+        quantidade = in.readInt();
+    }
+
+    public static final Creator<Produto> CREATOR = new Creator<Produto>() {
+        @Override
+        public Produto createFromParcel(Parcel in) {
+            return new Produto(in);
+        }
+
+        @Override
+        public Produto[] newArray(int size) {
+            return new Produto[size];
+        }
+    };
 
     public String getNome() {
         return nome;
@@ -62,4 +91,24 @@ public class Produto {
 
     public Produto() {
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(nome);
+        dest.writeString(descricao);
+        if (preco == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(preco);
+        }
+        dest.writeString(status);
+        dest.writeInt(quantidade);
+    }
+
 }

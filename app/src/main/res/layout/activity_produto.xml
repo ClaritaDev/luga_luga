@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProdutoActivity">
+
+
+    <TextView
+        android:id="@+id/nomeProdutoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_produto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="26sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/qtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/qtd"
+        android:textSize="26sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/produtoImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_produto"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProdutoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/precoProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_preco"
+        app:layout_constraintTop_toBottomOf="@+id/produtoImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="20dp">
+    </TextView>
+    
+    <Button
+        android:id="@+id/alugaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintTop_toBottomOf="@+id/produtoImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/aluga">
+    </Button>
+
+    <TextView
+        android:id="@+id/descricaoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/alugaBtn"
+        android:text="@string/tv_descricao"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,5 +1,7 @@
 package com.senai.lugaluga.view;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -51,11 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(View view, int position) {
 
+                Intent intent = new Intent(MainActivity.this, ProdutoActivity.class);
+                intent.putExtra("produto",produtoList.get(position));
+                startActivity(intent);
+
             }
-
-            @Override
+             @Override
             public void onLongItemClick(View view, int position) {
-
+                Toast.makeText(getApplicationContext(),produtoList.get(position).getStatus(),Toast.LENGTH_SHORT).show();
             }
 
             @Override
