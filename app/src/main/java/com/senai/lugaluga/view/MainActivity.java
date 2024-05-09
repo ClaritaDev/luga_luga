@@ -1,8 +1,7 @@
 package com.senai.lugaluga.view;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +15,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
+
 
 import com.senai.lugaluga.R;
 import com.senai.lugaluga.RecyclerItemClickListener;
@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.listaProdutos);
 
         CriarListaProdutos();
+
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.my_toolbar2);
+        setSupportActionBar(mToolbar);
 
         adapterProduto = new AdapterProduto(produtoList);
 
