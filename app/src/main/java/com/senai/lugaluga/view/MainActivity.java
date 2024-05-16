@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         produto = new Produto("Fone",
                 "Bluetooth",
                 50.00,
-                "Disponivel",
+                "Indisponivel",
                 26);
         produtoList.add(produto);
 
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         produto = new Produto("Furadeira",
                 "5 brocas 220V",
                 50.00,
-                "Disponivel",
+                "Indisponivel",
                 3);
         produtoList.add(produto);
 

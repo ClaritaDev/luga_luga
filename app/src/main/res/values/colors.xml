@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#1C1C8E</color>
+    <color name="amarelo">#d1ad0f</color>
+    <color name="cinza">#8a8678</color>
 </resources>
