@@ -7,6 +7,7 @@
     <string name="qtd">10pc</string>
     <string name="aluga">Alugar</string>
     <string name="tv_preco"><b>R$ 00,00</b></string>
+    <string name="bemvindo"><b>Bem-vindo ao Luga-Luga</b></string>
     <string name="tv_descricao">Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos.</string>
     <string-array name="uf_cadastro">
 
@@ -39,4 +40,17 @@
         <item>TO</item>
 
     </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

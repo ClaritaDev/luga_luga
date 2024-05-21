@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin = findViewById(R.id.button_logar);
         fazerCadastro = findViewById(R.id.fazerCadastro);
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity2.class);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
