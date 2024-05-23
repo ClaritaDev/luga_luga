@@ -7,11 +7,44 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_home"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_home"/>
         <item
             android:id="@+id/nav_produtos"
             android:icon="@drawable/ic_menu_produtos"
-            android:title="Produtos">
+            android:title="@string/produto">
         </item>
+        <item
+            android:id="@+id/nav_solicitacao"
+            android:icon="@drawable/ic_menu_solicitacoes"
+            android:title="@string/solici">
+        </item>
+        <item
+            android:id="@+id/nav_acompanhamento"
+            android:icon="@drawable/ic_menu_acompanhamento"
+            android:title="@string/acompanhamento">
+        </item>
+        <item
+            android:id="@+id/nav_atendimento"
+            android:icon="@drawable/ic_menu_atendimento"
+            android:title="@string/atend">
+        </item>
+
     </group>
+
+    <item
+        android:title="Mais informações">
+        <menu>
+            <item
+                android:id="@+id/nav_sobreNos"
+                android:icon="@drawable/ic_menu_sobrenos"
+                android:title="@string/sobre">
+            </item>
+            <item
+                android:id="@+id/nav_faleConosco"
+                android:icon="@drawable/ic_menu_faleconosco"
+                android:title="@string/fale">
+            </item>
+        </menu>
+    </item>
+
 </menu>

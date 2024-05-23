@@ -17,4 +17,39 @@
         tools:layout="@layout/fragment_produto"
         android:name="com.senai.lugaluga.view.ProdutoFragment">
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_solicitacao"
+        android:name="com.senai.lugaluga.view.SolicitacaoFragment"
+        android:label="Solicitações"
+        tools:layout="@layout/fragment_solicitacao">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_acompanhamento"
+        android:name="com.senai.lugaluga.view.AcompanhamentoFragment"
+        android:label="Acompanhamento"
+        tools:layout="@layout/fragment_acompanhamento">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_atendimento"
+        android:name="com.senai.lugaluga.view.AtendimentoFragment"
+        android:label="Atendimento"
+        tools:layout="@layout/fragment_atendimento">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sobreNos"
+        android:name="com.senai.lugaluga.view.SobreNosFragment"
+        android:label="Sobre nós"
+        tools:layout="@layout/fragment_sobre_nos">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_faleConosco"
+        android:name="com.senai.lugaluga.view.FaleConoscoFragment"
+        android:label="Fale conosco"
+        tools:layout="@layout/fragment_fale_conosco">
+    </fragment>
 </navigation>
