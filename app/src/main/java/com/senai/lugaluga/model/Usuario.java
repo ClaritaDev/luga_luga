@@ -11,7 +11,7 @@ public class Usuario implements Parcelable {
 
     private String data;
 
-    private int cep;
+    private String cep;
 
     private String cidade;
 
@@ -19,7 +19,7 @@ public class Usuario implements Parcelable {
 
     private String logradouro;
 
-    private int numero;
+    private String numero;
 
     private String complemento;
 
@@ -31,7 +31,7 @@ public class Usuario implements Parcelable {
 
     private String senha;
 
-    public Usuario(String nome, String cpf, String data, int cep, String cidade, String uf, String logradouro, int numero, String complemento, String bairro, String email, String senha, int telefone) {
+    public Usuario() {
         this.nome = nome;
         this.cpf = cpf;
         this.data = data;
@@ -51,11 +51,11 @@ public class Usuario implements Parcelable {
         nome = in.readString();
         cpf = in.readString();
         data = in.readString();
-        cep = in.readInt();
+        cep = in.readString();
         cidade = in.readString();
         uf = in.readString();
         logradouro = in.readString();
-        numero = in.readInt();
+        numero = in.readString();
         complemento = in.readString();
         bairro = in.readString();
         telefone = in.readInt();
@@ -68,11 +68,11 @@ public class Usuario implements Parcelable {
         dest.writeString(nome);
         dest.writeString(cpf);
         dest.writeString(data);
-        dest.writeInt(cep);
+        dest.writeString(cep);
         dest.writeString(cidade);
         dest.writeString(uf);
         dest.writeString(logradouro);
-        dest.writeInt(numero);
+        dest.writeString(numero);
         dest.writeString(complemento);
         dest.writeString(bairro);
         dest.writeInt(telefone);
@@ -121,11 +121,11 @@ public class Usuario implements Parcelable {
         this.data = data;
     }
 
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
@@ -153,11 +153,11 @@ public class Usuario implements Parcelable {
         this.logradouro = logradouro;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
