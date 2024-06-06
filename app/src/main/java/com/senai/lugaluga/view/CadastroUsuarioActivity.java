@@ -247,9 +247,9 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                 UsuarioController crud = new UsuarioController(getApplicationContext());
                 Usuario usuario = new Usuario();
                 usuario.setNome(input_nome.getEditText().getText().toString());
-                usuario.setCpf(input_cpf.getEditText().getText().toString());
-                usuario.setData(input_data.getEditText().getText().toString());
-                usuario.setCep(input_cep.getEditText().getText().toString());
+                usuario.setCpf(inputCpf.getEditText().getText().toString());
+                usuario.setData(inputData.getEditText().getText().toString());
+                usuario.setCep(inputCep.getEditText().getText().toString());
                 usuario.setCidade(input_cidade.getEditText().toString());
                 usuario.setUf(spinnerUf.getSelectedItem().toString());
                 usuario.setLogradouro(input_logradouro.getEditText().getText().toString());
